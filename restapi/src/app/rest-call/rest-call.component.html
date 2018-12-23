@@ -1,0 +1,28 @@
+<h1>testing rest calls</h1>
+
+<!-- <ul *ngIf= "users && users.length > 0">
+    
+  <li  *ngFor= "let user of users" 
+  >{{user|json}}
+  <img src="{{user.avatar}}" alt="Smiley face" height="42" width="42">
+</li>
+</ul>
+<li  *ngFor= "let user of cars">{{user|json}}</li>
+<span>{{users | json}}</span> -->
+
+<div class="container">
+  <form (submit) = "putUser()">
+  <div class="form-group">
+  <label>Name</label>
+  <input type="text" name="name" [(ngModel)]="user.name" class="form-control">
+  </div>
+  <div class="form-group">
+    <label>Job</label>
+  <input type="text" name="Job" [(ngModel)]="user.job" class="form-control">
+</div>
+<input type="submit" class="btn btn-primary" value="submit">
+<button type="reset" value="reset">Reset</button>
+</form>
+</div>
+
+<!-- <button (click) = "postUser()">Submit</button> -->

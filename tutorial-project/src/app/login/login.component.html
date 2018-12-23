@@ -1,0 +1,18 @@
+
+<h1>login</h1> 
+<div class="container">
+  <form (submit)="logUser()">
+    <div>
+      <label>Email</label>
+      <input type="text" name="Email" [(ngModel)]="user_login.email">
+    </div>
+    <div>
+      <label>Password</label>
+      <input type="password" name="Password" [(ngModel)]="user_login.password">
+    </div>
+      <input type="submit" class="btn-primary" value="submit">
+      <button type="reset" class="btn-primary" value="reset">Reset</button>
+   
+  </form>
+
+</div>
